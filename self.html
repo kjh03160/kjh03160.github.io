@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Myself</title>
+
+    <style>
+        @font-face { font-family: 'BMJUA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff'); font-weight: normal; font-style: normal; }
+        
+        body {
+            font-family: 'BMJUA';
+            text-align: center;
+            background-image: url("https://images.pexels.com/photos/1759609/pexels-photo-1759609.jpeg?cs=srgb&dl=architecture-building-city-1759609.jpg&fm=jpg");
+            background-repeat: no-repeat;
+            background-size: 30%
+
+
+        }
+        .A {
+            border: 5px solid black;
+
+        }
+
+        .A:hover{
+            color : red;
+            letter-spacing : 7px;
+        }
+        
+        ol {
+            text-align: center;
+            list-style-position: inside;
+
+        }
+
+
+        .B {
+            border: 3px solid red;
+            padding : 10px;
+            margin : 10px;
+            animation-name: moveb;
+            animation-duration: 4s;
+            position : relative;
+            animation-timing-function: linear;  
+            animation-iteration-count: infinite;
+
+
+        }
+        @keyframes moveb {
+            0%   { opacity: 0.2;}
+            25%  {opacity: 0.4;}
+            50%  {opacity: 0.6;}
+            75%  {opacity: 0.8;}
+            100% {opacity: 1.0;}
+
+        }
+
+
+
+
+        
+        img{
+            border: 1px solid red;
+            animation-name: moveimage;
+            animation-duration: 4s;
+            position : relative;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes moveimage {
+            0%   { left:10px; top:1px;}
+            25%  { left:15px; top:0px;}
+            50%  { left:20px; top:1px;}
+            75%  { left:15px; top:0px;}
+            100% { left:10px; top:1px;}
+
+        }
+        
+    
+    </style>
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <div class="A">
+        <h1>About me</h1>
+
+
+    </div>
+
+
+    <div class="B">
+
+        <h2>나의 신상</h2>
+        <a href="" target="_blank"></a><img src="./20031967_1378801575566494_6185016482598973584_n.jpg" width="100" height="200" alt="오류 뜰때 메시지"></a>
+        <p>이름 : 김준하<br>사는 곳 : .. <br>전공 : 영어학 / 경영학</p>
+
+
+    </div>
+
+
+    <h2>활동 내역</h2>
+        <ol>
+            <li>이것</li>
+            <li>저것</li>
+            <li>요것</li>
+        </ol>
+
+    <h2>3. 어떤 거 </h2>
+        <p> 넣을까  </p>
+
+    <a href="{% url 'webservice' %}"><h2>내가 만들고 싶은 웹서비스</h2></a>
+    
+</body>
+</html>

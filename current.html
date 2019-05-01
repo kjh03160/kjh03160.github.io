@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -20,11 +20,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="animate.min.css">
 
-    <title>Home</title>
+    <title>Currnet</title>
+
 
     <style>
         @font-face {
@@ -35,7 +33,6 @@
         }
 
         body {
-
             font-family: 'KimNamyun';
 
         }
@@ -47,8 +44,7 @@
         .navbar {
             position: fixed;
             width: 100%;
-            top: 0px;
-            z-index: 2;
+            z-index:2;
         }
 
         .jb-x-large {
@@ -59,22 +55,8 @@
             font-size: xx-large;
         }
 
-        img {
-            display: block;
-            margin: 0px auto;
-
-        }
-
-        .box {
-            border: solid 2px;
-            border-radius: 10px;
-            margin-bottom: 50px;
-            padding: 30px;
-        }
-
-        .btn {
-            margin-left: 20px;
-            margin-top: 40px;
+        .card-text {
+            text-align: center
         }
     </style>
 
@@ -99,8 +81,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="profile.html">Profile</a>
@@ -111,8 +93,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="mytwenties.html">My Early Twenties</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="current.html">Current</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="current.html">Current <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="likelion.html">LIKE LION</a>
@@ -124,48 +106,78 @@
     </div>
     </nav>
     <br>
+
     <div class="A">
-        <div class="container">
-            <h1><i class="fas fa-running" style="font-size: 1em;"> </i> My First Page <i class="fas fa-child"
-                    style="font-size: 1em;"></i>
-
-            </h1>
-            <div class="animated infinite pulse delay-2s">
-                <img src="http://cfile223.uf.daum.net/image/1863D6424F2444CD181788">
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <div class="card" style="width: 90%; height: 90%; padding:5px;">
+                    <a href="후쿠1.jpg" target="_blank"><img src="후쿠1.jpg" width="200" height="350" class="card-img-top"
+                            alt="selfie"></a>
+                    <div class="card-body">
+                        <p class="card-text">전역 후 후쿠오카 여행 모모치 해변 옆</p>
+                    </div>
+                </div> <br>
             </div>
 
-            <br>
-            <div class="box">
-                <h2>방명록 남겨주실래요?</h2>
-                <form class="form-inline" , action="전송받을 대상">
-                    <div class="input-group input-group-lg" style="padding:1px;">
-                        <label class="jb-x-large" for="username">Name &nbsp;&nbsp;</label>
-                        <input type="text" class="form-control" id="username" placeholder="Jane Doe">
+            <div class="form-group col-md-4">
+                <div class="card" style="width: 90%; height: 90%; padding:5px;">
+                    <a href="후쿠2.jpg" target="_blank"><img src="후쿠2.jpg" width="200" height="350" class="card-img-top"
+                            alt="selfie"></a>
+                    <div class="card-body">
+                        <p class="card-text">모모치 해변에서 노을</p>
                     </div>
-                    <div class="input-group input-group-lg" style="padding:1px;">
-                        <label class="jb-x-large" for="useremail">&nbsp;&nbsp;Email &nbsp;&nbsp;</label>
-                        <input type="email" class="form-control" id="useremail" placeholder="jane.doe@example.com">
-                    </div>
-                    <br>
-                    <br>
-                    <div>
-
-                        제 목 : <input type="text" class="form-control" id="title"> <br>
-                        내 용 : <br>
-                        <textarea class="form-control" rows="5" cols="180"></textarea>
-                    </div>
-                    <br>
-                    <div><br>
-
-
-                        <button type="submit" class="btn btn-primary btn-lg">Leave footprint</button>
-
-                    </div>
+                </div> <br>
             </div>
+
+            <div class="form-group col-md-4">
+                <div class="card" style="width: 90%; height: 90%; padding:5px;">
+                    <a href="후쿠3.jpg" target="_blank"><img src="후쿠3.jpg" width="200" height="350" class="card-img-top"
+                            alt="selfie"></a>
+                    <div class="card-body">
+                        <p class="card-text">노을 기다리며 인스타 갬성 <br><a href="모모.html">더보기</a></p>
+                    </div>
+                </div> <br>
+            </div>
+
+
+
+            <div class="form-group col-md-4">
+                <div class="card" style="width: 90%; height: 90%; padding:5px;">
+                    <a href="후쿠4.jpg" target="_blank"><img src="후쿠4.jpg" width="200" height="350" class="card-img-top"
+                            alt="selfie"></a>
+                    <div class="card-body">
+                        <p class="card-text">유후인 료칸 온천 <br> <a href="후쿠오카.html">더보기</a></p>
+                    </div>
+                </div> <br>
+            </div>
+            <div class="form-group col-md-4">
+                <div class="card" style="width: 90%; height: 90%; padding:5px;">
+                    <a href="시간표.jpg" target="_blank"><img src="시간표.jpg" width="200" height="350" class="card-img-top"
+                            alt="selfie"></a>
+                    <div class="card-body">
+                        <p class="card-text">군대 버프<br>다시는 그러지말자...</p>
+                    </div>
+                </div> <br>
+            </div>
+            <div class="form-group col-md-4">
+                <div class="card" style="width: 90%; height:90%; padding:5px;">
+                    <a href="멋사.jpg" target="_blank"><img src="멋사.jpg" width="200" height="350" class="card-img-top"
+                            alt="selfie"></a>
+                    <div class="card-body">
+                        <p class="card-text">코딩 연합동아리 합격!<br>Language Technology 가보자</p>
+                    </div>
+                </div> <br>
+            </div>
+
+
+
+
+
+
+
+
+
         </div>
-        </form>
-
-
     </div>
 </body>
 
